@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+
+}
+html{
+	scroll-behavior: smooth;
+}
+
+#loading{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background:white url('https://media.giphy.com/media/MDrmyLuEV8XFOe7lU6/giphy.gif')no-repeat center;
+	z-index: 99999;
+}
+.join_gradient{
+	background-image: linear-gradient(to right, #f650fe, #f1c40f)
+
+}
+
+.mb_gr{
+	background-image: linear-gradient(#e74c3c,#f39c12)
+
+
+}
+.footer-div ul{
+	list-style-type: none;
+
+}
+.footer-div li a{
+	color: #fff;
+
+
+}
+.footer-div li a,li:hover{
+	color: orange;
+}
+
+.footer-wrapper{
+	width: 100%;
+	height: auto;
+	min-height: 300px;
+	margin:auto;
+	background-image: url("../img/footer.jpg");
+	/*background-position: center;*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.fa-facebook{
+	color: #341f97;
+}
+.fa-instagram{
+	color: #ee5253;
+}
+.fa-twitter{
+	color: #48dbfb;
+
+}
+.fa-linkedin{
+	color: #5f27cd;
+}
+.scroll-top{
+	/*display:none;*/
+	position: fixed;
+	bottom: 20px;
+	right: 40px;
+	z-index: 99;
+	border:none;
+	color: #fff;
+
+     padding: 10px;
+	border-radius: 10px;
+
+}
+.scroll-top:hover{
+	color: red;
+}
+.our_services{
+	border-radius: 20px;
+}
+
+@media(max-width: 760px){
+	.navbar-nav{
+		text-align: center!important;
+	}
+	.our_services{
+		height: auto;
+		margin-top: 10px;
+	}
+	.card-second{
+		transform: translateY(0px);
+
+		margin: 30px 0;
+	}
+} 
+.about_part1,.about_part2, .card_part1, .card_part2, .card_part3, .team2, .contact1{
+	opacity: 0;
+}
+.about_part1.animated,.about_part2.animated, .card_part1.animated, .card_part2.animated, .card_part3.animated, .team2.animated, .contact1.animated{ 
+	opacity: 1;
+}
+.card{
+	box-shadow: 4px 4px 5px 3px grey;
+	
+
+
+}
+
+.our_team{
+	/*width: 100%;
+		height: 100vh;*/
+		margin-top: 50px;
+		
+		position: relative;
+}
+.our_team:before{
+	content: "";
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	bottom: 0%;
+	z-index: -1;
+	background:linear-gradient(160deg, #7f8fa6 55%, #fff 0%);
+}

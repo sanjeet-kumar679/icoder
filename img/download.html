@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html  lang="en" >
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta content="Vladimir Stepura" name="author"> 
+  <title>32 Anime JS Examples</title>
+  <meta name="description" content="Collection of anime.js (JavaScript animation library) code examples. Update of September 2018 collection. 12 new items."> 
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#414647">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  
+  <meta property="og:site_name" content="Free Frontend">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://freefrontend.com/anime-js-examples/">
+  <meta property="og:title" content="32 Anime JS Examples">
+  <meta property="og:description" content="Collection of anime.js (JavaScript animation library) code examples. Update of September 2018 collection. 12 new items.">
+  <meta property="og:type" content="ogtypeart">
+  <meta name="og:image" content="https://freefrontend.com/assets/img/anime-js-examples/anime-js-logo-animation.png"> 
+  
+  <meta name="twitter:site" content="@css_live">
+  <meta name="twitter:creator" content="@css_live"> 
+  <meta name="twitter:description" content="Collection of anime.js (JavaScript animation library) code examples. Update of September 2018 collection. 12 new items.">
+  <meta name="twitter:title" content="32 Anime JS Examples">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://freefrontend.com/assets/img/anime-js-examples/anime-js-logo-animation.png"> 
+  <link rel="stylesheet" href="https://freefrontend.com/css/layers.min.css">
+  <link rel="stylesheet" href="https://freefrontend.com/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://freefrontend.com/css/prism.css">
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+        "popup": {
+      "background": "#edeff5",
+      "text": "#838391"
+    },
+    "button": {
+      "background": "#4b81e8"
+    }
+  },
+  "theme": "edgeless",
+  "position": "bottom-right",
+    "content": {
+      "message": "By using freefrontend.com you accept our cookies and agree to our privacy policy, including cookie policy.",
+      "dismiss": "OK!",
+      "link": "Read privacy policy.",
+      "href": "https://freefrontend.com/privacy-policy/"
+    }
+  })});
+  </script>
+</head>
+<body class="single single-post">
+  <header role="banner" class="transparent light">
+    <div class="row">
+      <div class="nav-inner row-content buffer-left buffer-right even clear-after">
+        <div id="brand">
+          <h2 class="reset"><a href="https://freefrontend.com">Free Frontend</a></h2>
+        </div>
+        <a id="menu-toggle" href="#"><i class="fa fa-bars fa-lg"></i></a>
+        <nav>
+          <ul class="reset" role="navigation">
+            <li class="menu-item">
+              <a href="javascript:void(0)">HTML + CSS</a>
+              <ul class="sub-menu">
+                <li><a href="/html-code-examples/">HTML Examples</a></li>
+                <li><a href="/css-code-examples/">CSS Examples</a></li>
+                <li><a href="/bootstrap-code-examples/">Bootstrap Examples</a></li>
+                <li><a href="/html-css-speed-code/">Speed Code</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="javascript:void(0)">JavaScript</a>
+              <ul class="sub-menu">
+                <li><a href="/javascript-code-examples">JavaScript Examples</a></li>
+                <li><a href="/jquery-code-examples/">jQuery Examples</a></li>
+                <li><a href="/react-code-examples/">React Examples</a></li>
+                <li><a href="/vue-code-examples/">Vue Examples</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="/free-web-books/">Books</a>
+            </li>
+            <li class="menu-item social">
+                <a href="javascript:void(0)"><i class="fas fa-ellipsis-h"></i></a>
+                <ul class="sub-menu">
+                    <li class="s-youtube"><a href="https://www.youtube.com/channel/UCGr_1whd05px8Jiksu_XVzQ" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li class="s-twitter"><a href="https://twitter.com/FreeFrontend" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li class="s-facebook"><a href="https://www.facebook.com/freefrontend/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li class="s-pinterest"><a href="https://www.pinterest.com/freefrontend/freefrontend/" target="_blank"><i class="fab fa-pinterest"></i></a></li>
+                    <li class="s-rss"><a href="/index.xml" target="_blank"><i class="fa fa-rss"></i></a></li>
+                </ul>
+            </ul>
+            </li>
+          </ul>
+        </nav>
+
+</div>	
+</div>	
+</header>
+<main role="main">
+  <div id="main" class="row">
+    <div class="row-content buffer-left buffer-right buffer-bottom clear-after">
+      <div class="ads column twenty last" style="margin-bottom: 40px;">
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-2687268505112777"
+               data-ad-slot="1935567240"
+               data-ad-format="auto"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+          </div>
+          <div id="post-nav">
+            <ul class="clear-after reset plain">
+              <li id="prev-items" class="post-nav"></li> 
+              <li id="all-items" class="post-nav"><a href="https://freefrontend.com"><i class="icon icon-images"></i></a></li>
+              <li id="next-items" class="post-nav"></li>  
+            </ul>
+          </div>
+      <aside role="complementary" class="sidebar column three">
+							<div class="widget widget_search">
+									<script>
+											(function() {
+											  var cx = 'partner-pub-2687268505112777:1479236044';
+											  var gcse = document.createElement('script');
+											  gcse.type = 'text/javascript';
+											  gcse.async = true;
+											  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+											  var s = document.getElementsByTagName('script')[0];
+											  s.parentNode.insertBefore(gcse, s);
+											})();
+										  </script>
+										  <gcse:search personalizedAds="false"></gcse:search>
+							</div>
+							<div class="widget">
+									<div class="ads">
+											<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+											
+											<ins class="adsbygoogle"
+												 style="display:block"
+												 data-ad-client="ca-pub-2687268505112777"
+												 data-ad-slot="3500726047"
+												 data-ad-format="auto"></ins>
+											<script>
+											(adsbygoogle = window.adsbygoogle || []).push({});
+											</script>
+										</div>
+								</div>
+								<div class="widget">
+									<div class="ads">
+											<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+											
+											<ins class="adsbygoogle"
+												 style="display:block"
+												 data-ad-client="ca-pub-2687268505112777"
+												 data-ad-slot="3500726047"
+												 data-ad-format="auto"></ins>
+											<script>
+											(adsbygoogle = window.adsbygoogle || []).push({});
+											</script>
+										</div>
+								</div>			
+						</aside>
+      <div class="post-area clear-after" style="clear: none;">
+        <article role="main" class="column nine last">
+          <img class="post-thumb" src="/assets/img/anime-js-examples/anime-js-logo-animation.png" alt="Collection of anime.js (JavaScript animation library) code examples. Update of September 2018 collection. 12 new items." title="Collection of anime.js (JavaScript animation library) code examples. Update of September 2018 collection. 12 new items.">
+          <h5 class="meta-post"><time datetime="2020-01-21 00:00:00 &#43;0000 UTC">January 21, 2020</time></h5>
+          <h1>32 Anime JS Examples</h1>
+          
+          <div class="addthis_inline_share_toolbox_qjvt"></div>
+          <p class="intro">Collection of <strong>anime.js</strong> (JavaScript animation library) code <strong>examples</strong>. Update of September 2018 collection. 12 new items.</p>
+
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/29IQwtXVYqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<article class="wrapper-2017">
+  <video src="/assets/img/anime-js-examples/anime-js-grid-staggering.mp4" preload="metadata" loop></video>
+    <div class="img-extra"></div>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Julian Garnier</li>
+        <li><time>July 25, 2019</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/juliangarnier/pen/XvjWvx" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS / JS</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About a code</h4>
+  <h3>Anime.js Grid Staggering</h3>
+  <p>An animation that demonstrate the new anime.js grid staggering feature.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Responsive: </span>no</p>
+  <p><span class="accent">Dependencies: </span>anime.js</p>
+</article>
+
+<article class="wrapper-2017">
+  <video src="/assets/img/anime-js-examples/staggering-animation-with-anime-js-week-18-52.mp4" preload="metadata" loop></video>
+    <div class="img-extra"></div>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Mert Cukuren</li>
+        <li><time>May 1, 2019</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/knyttneve/pen/vMqmKb" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML (Pug) / CSS (SCSS) / JS (Babel)</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About a code</h4>
+  <h3>Staggering Animation With Anime.js</h3>
+  <p></p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Responsive: </span>yes</p>
+  <p><span class="accent">Dependencies: </span>anime.js</p>
+</article>
+
+<article class="wrapper-2017">
+  <video src="/assets/img/anime-js-examples/layered-animations-with-anime-js.mp4" preload="metadata" loop></video>
+    <div class="img-extra"></div>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Julian Garnier</li>
+        <li><time>January 8, 2019</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/juliangarnier/pen/LMrddV" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS / JS</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About a code</h4>
+  <h3>Layered Animations With Anime.js</h3>
+  <p>An animation that demonstrate how to make layered animations with anime.js.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Responsive: </span>yes</p>
+  <p><span class="accent">Dependencies: </span>anime.js</p>
+</article>
+
+<article class="wrapper-2017">
+  <video src="/assets/img/anime-js-examples/advanced-staggering-with-anime-js.mp4" preload="metadata" loop></video>
+    <div class="img-extra"></div>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Julian Garnier</li>
+        <li><time>January 8, 2019</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/juliangarnier/pen/MZXQNV" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS / JS</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About a code</h4>
+  <h3>Advanced Staggering With Anime.js</h3>
+  <p>An animation that demonstrate the new anime.js grid staggering feature.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Responsive: </span>yes</p>
+  <p><span class="accent">Dependencies: </span>anime.js</p>
+</article>
+
+<article class="wrapper-2017">
+  <video src="/assets/img/anime-js-examples/svg-sphere-animation-with-anime-js.mp4" preload="metadata" loop></video>
+    <div class="img-extra"></div>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Julian Garnier</li>
+        <li><time>January 7, 2019</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/juliangarnier/pen/LMrRNW" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS / JS</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About a code</h4>
+  <h3>SVG Sphere Animation With Anime.js</h3>
+  <p></p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Responsive: </span>yes</p>
+  <p><span class="accent">Dependencies: </span>anime.js</p>
+</article>
+
+<article class="wrapper-2017">
+  <video src="/assets/img/anime-js-examples/anime-js-v3-logo-animation.mp4" preload="metadata" loop></video>
+    <div class="img-extra"></div>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Julian Garnier</li>
+        <li><time>January 7, 2019</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/juliangarnier/pen/vvjqKG" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS / JS</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About a code</h4>
+  <h3>Anime.js V3 Logo Animation</h3>
+  <p></p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Responsive: </span>yes</p>
+  <p><span class="accent">Dependencies: </span>anime.js</p>
+</article>
+
+<article class="wrapper-2017">
+  <video src="/assets/img/anime-js-examples/easings-animations-with-anime-js.mp4" preload="metadata" loop></video>
+    <div class="img-extra"></div>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Julian Garnier</li>
+        <li><time>January 7, 2019</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/juliangarnier/pen/dwKGoW" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS / JS</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About a code</h4>
+  <h3>Easings Animations With Anime.js</h3>
+  <p>An easing visualisation animation using the new staggering system in anime.js.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Responsive: </span>yes</p>
+  <p><span class="accent">Dependencies: </span>anime.js</p>
+</article>
+
+<article class="wrapper-2017">
+  <video src="/assets/img/anime-js-examples/stepper-iteration-with-anime-js.mp4" preload="metadata" loop></video>
+    <div class="img-extra"></div>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Valery Alikin</li>
+        <li><time>December 22, 2018</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/AlikinVV/pen/OrmJxj" target="_blank">demo and code</a></li>
+      <li><a href="https://dribbble.com/shots/5614928-Stepper-XVII" target="_blank">dribbble shot</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS (SCSS) / JS</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About a code</h4>
+  <h3>Stepper Iteration With Anime JS</h3>
+  <p></p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Responsive: </span>no</p>
+  <p><span class="accent">Dependencies: </span>jquery.js, anime.js</p>
+</article>
+
+<article class="wrapper-2017">
+  <video src="/assets/img/anime-js-examples/banksy-shredder.mp4" preload="metadata" loop></video>
+    <div class="img-extra"></div>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Lee Martin</li>
+        <li><time>October 7, 2018</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/leemartin/pen/pxNvod" target="_blank">demo and code</a></li>
+      <li><a href="https://medium.com/@leemartin/how-to-recreate-the-banksy-artwork-shredder-using-css-grid-ff20c0f5a19" target="_blank">tutorial</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS / JS</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About a code</h4>
+  <h3>Banksy Shredder</h3>
+  <p>A simple art shredder made famous by Banksy using CSS Grid and Anime JS.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Responsive: </span>no</p>
+  <p><span class="accent">Dependencies: </span>vue.js, anime.js, load-image.js</p>
+</article>
+
+<article class="wrapper-2017">
+  <figure>
+    <img class="lazyload" src="/assets/img/placeholder.png" data-src="/assets/img/anime-js-examples/Anime-js-Line-Drawing.png" alt="Demo image: Line Drawing" title="Line Drawing">
+    <img class="lazyload" data-src="/assets/img/anime-js-examples/Anime-js-Line-Drawing.gif" alt="Line Drawing - GIF Demo" title="Line Drawing">
+    <div class="img-extra"></div>
+  </figure>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Dusko Stamenic</li>
+        <li><time>September 8, 2018</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/DuskoStamenic/pen/QVawXq" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS / JavaScript</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About the code</h4>
+  <h3>Line Drawing</h3>
+  <p>Line drawing with anime.js.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Dependencies: </span>-</p>
+</article>
+
+<article class="wrapper-2017">
+  <figure>
+    <img class="lazyload" src="/assets/img/placeholder.png" data-src="/assets/img/anime-js-examples/SVG-Morphing-with-Anime-js.png" alt="Demo image: SVG Morphing with Anime.js" title="SVG Morphing with Anime.js">
+    <img class="lazyload" data-src="/assets/img/anime-js-examples/SVG-Morphing-with-Anime-js.gif" alt="SVG Morphing with Anime.js - GIF Demo" title="SVG Morphing with Anime.js">
+    <div class="img-extra"></div>
+  </figure>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Paolo Duzioni</li>
+        <li><time>August 28, 2018</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/Paolo-Duzioni/pen/jvrxpL" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML (Pug) / CSS (SCSS) / JavaScript (Babel)</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About the code</h4>
+  <h3>SVG Morphing with Anime.js</h3>
+  <p>Simple SVG morphing with anime.js.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Dependencies: </span>-</p>
+</article>
+
+<article class="wrapper-2017">
+  <figure>
+    <img class="lazyload" src="/assets/img/placeholder.png" data-src="/assets/img/anime-js-examples/Animated-Hexagon-Circle-Logo.png" alt="Demo image: Animated Hexagon Circle Logo" title="Animated Hexagon Circle Logo">
+    <img class="lazyload" data-src="/assets/img/anime-js-examples/Animated-Hexagon-Circle-Logo.gif" alt="Animated Hexagon Circle Logo - GIF Demo" title="Animated Hexagon Circle Logo">
+    <div class="img-extra"></div>
+  </figure>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Ryan Mulligan</li>
+        <li><time>July 15, 2018</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/hexagoncircle/pen/gjPoxN" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS (SCSS) / JavaScript</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About the code</h4>
+  <h3>Animated Hexagon Circle Logo</h3>
+  <p>Logo animation using anime.js.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Dependencies: </span>-</p>
+</article>
+
+<div class="container">
+  <div class="ads">
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- adaptive-2 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2687268505112777"
+     data-ad-slot="6557570047"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  </div>
+</div>
+
+<article class="wrapper-2017">
+  <figure>
+    <img class="lazyload" src="/assets/img/placeholder.png" data-src="/assets/img/anime-js-examples/Svg-illustration-with-Anime-js.png" alt="Demo image: Svg illustration with Anime.js" title="Svg illustration with Anime.js">
+    <img class="lazyload" data-src="/assets/img/anime-js-examples/Svg-illustration-with-Anime-js.gif" alt="Svg illustration with Anime.js - GIF Demo" title="Svg illustration with Anime.js">
+    <div class="img-extra"></div>
+  </figure>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Artem</li>
+        <li><time>June 18, 2018</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/fitzsyke/pen/pKdYyE" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS (Sass) / JavaScript</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About the code</h4>
+  <h3>SVG Illustration with Anime.js</h3>
+  <p>Animated SVG illustration with anime.js.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Dependencies: </span>-</p>
+</article>
+
+<article class="wrapper-2017">
+  <video src="/assets/img/anime-js-examples/path-slider-basic-demo.mp4" preload="metadata" loop></video>
+    <div class="img-extra"></div>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>lmgonzalves</li>
+        <li><time>March 8, 2018</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/lmgonzalves/pen/dmbmpQ" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS (SCSS) / JS</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About a code</h4>
+  <h3>Path Slider</h3>
+  <p></p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Responsive: </span>yes</p>
+  <p><span class="accent">Dependencies: </span>anime.js, path-slider.js</p>
+</article>
+
+<article class="wrapper-2017">
+  <figure>
+    <img class="lazyload" src="/assets/img/placeholder.png" data-src="/assets/img/anime-js-examples/Hand-written-SVG-text-animation.png" alt="Demo image: Hand Written SVG Text Animation" title="Hand Written SVG Text Animation">
+    <img class="lazyload" data-src="/assets/img/anime-js-examples/Hand-written-SVG-text-animation.gif" alt="Hand Written SVG Text Animation - GIF Demo" title="Hand Written SVG Text Animation">
+    <div class="img-extra"></div>
+  </figure>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Matthew Ellis</li>
+        <li><time>March 3, 2018</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/mellis84/pen/JpVZNw" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS (SCSS) / JavaScript (Babel)</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About the code</h4>
+  <h3>Hand Written SVG Text Animation</h3>
+  <p>A little hand written text animation made with <strong>anime.js</strong>. The masking is a little rough but you get the idea.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Firefox, Opera, Safari</p>
+  <p><span class="accent">Dependencies: </span>-</p>
+</article>
+
+<article class="wrapper-2017">
+  <figure>
+    <img class="lazyload" src="/assets/img/placeholder.png" data-src="/assets/img/anime-js-examples/Range-Input-with-SVG-and-anime-js.png" alt="Demo image: Range Input with Anime.js" title="Range Input with Anime.js">
+    <img class="lazyload" data-src="/assets/img/anime-js-examples/Range-Input-with-SVG-and-anime-js.gif" alt="Range Input with Anime.js - GIF Demo" title="Range Input with Anime.js">
+    <div class="img-extra"></div>
+  </figure>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Rina Sorovaiski</li>
+        <li><time>February 24, 2018</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/RinaSorovaiski/pen/EQeQeb" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS (SCSS) / JavaScript</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About the code</h4>
+  <h3>Range Input with Anime.js</h3>
+  <p>Elastic range input with SVG and <strong>anime.js</strong>.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Dependencies: </span>-</p>
+</article>
+
+<article class="wrapper-2017">
+  <figure>
+    <img class="lazyload" src="/assets/img/placeholder.png" data-src="/assets/img/anime-js-examples/Mobile-Planet-gallery-with-anime-js.png" alt="Demo image: Mobile Planet Gallery" title="Mobile Planet Gallery">
+    <img class="lazyload" data-src="/assets/img/anime-js-examples/Mobile-Planet-gallery-with-anime-js.gif" alt="Mobile Planet Gallery - GIF Demo" title="Mobile Planet Gallery">
+    <div class="img-extra"></div>
+  </figure>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Simone Bernabè</li>
+        <li><time>February 23, 2018</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/simoberny/pen/aqjEbz" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS (SCSS) / JavaScript</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About the code</h4>
+  <h3>Mobile Planet Gallery</h3>
+  <p>Mobile planet gallery with anime.js.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Dependencies: </span>jquery.js, hammer.js</p>
+</article>
+
+<article class="wrapper-2017">
+  <figure>
+    <img class="lazyload" src="/assets/img/placeholder.png" data-src="/assets/img/anime-js-examples/Anime-js-Snake-highlight.png" alt="Demo image: Snake Highlight" title="Snake Highlight">
+    <img class="lazyload" data-src="/assets/img/anime-js-examples/Anime-js-Snake-highlight.gif" alt="Snake Highlight - GIF Demo" title="Snake Highlight">
+    <div class="img-extra"></div>
+  </figure>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Mikael Ainalem</li>
+        <li><time>February 12, 2018</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/ainalem/pen/EQXjOR" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS / JavaScript</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About the code</h4>
+  <h3>Snake Highlight</h3>
+  <p>Slithering highlight in login form with <strong>anime.js</strong>.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Dependencies: </span>-</p>
+</article>
+
+<article class="wrapper-2017">
+  <figure>
+    <img class="lazyload" src="/assets/img/placeholder.png" data-src="/assets/img/anime-js-examples/Download-Button-with-anime-js.png" alt="Demo image: Download Button" title="Download Button">
+    <img class="lazyload" data-src="/assets/img/anime-js-examples/Download-Button-with-anime-js.gif" alt="Download Button - GIF Demo" title="Download Button">
+    <div class="img-extra"></div>
+  </figure>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Luis Manuel</li>
+        <li><time>February 1, 2018</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://scotch.io/tutorials/build-a-download-button-full-of-micro-interactions" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS (SCSS) / JavaScript</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About the code</h4>
+  <h3>Download Button</h3>
+  <p>Used CSS transitions and animations, along with the lightweight animation library <strong>anime.js</strong>, and segment.js for SVG <code></code> animations.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Dependencies: </span>segment.js</p>
+</article>
+
+<article class="wrapper-2017">
+  <figure>
+    <img class="lazyload" src="/assets/img/placeholder.png" data-src="/assets/img/anime-js-examples/Card-Flip.png" alt="Demo image: Card Flip" title="Card Flip">
+    <img class="lazyload" data-src="/assets/img/anime-js-examples/Card-Flip.gif" alt="Card Flip - GIF Demo" title="Card Flip">
+    <div class="img-extra"></div>
+  </figure>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Marcos Paulo</li>
+        <li><time>January 9, 2018</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/hellomp/pen/ZvrmdN" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS / JavaScript</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About the code</h4>
+  <h3>Card Flip</h3>
+  <p>A simple card flip effect using <strong>anime.js</strong>.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Dependencies: </span>-</p>
+</article>
+
+<article class="wrapper-2017">
+  <figure>
+    <img class="lazyload" src="/assets/img/placeholder.png" data-src="/assets/img/anime-js-examples/Animated-SVG-Frame-Slideshow.jpg" alt="Demo image: Animated SVG Frame Slideshow" title="Animated SVG Frame Slideshow">
+  </figure>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Mary Lou</li>
+        <li><time>November 15, 2017</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://tympanus.net/codrops/2017/11/15/animated-svg-frame-slideshow/" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS / JavaScript</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About the code</h4>
+  <h3>Animated SVG Frame Slideshow</h3>
+  <p>An experimental slideshow that shows an animated SVG frame when transitioning between slides. Different shapes can be used for creating a variety of styles. Used <strong>anime.js</strong> for the animations.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Dependencies: </span>imagesloaded.js</p>
+</article>
+
+<article class="wrapper-2017">
+  <figure>
+    <img class="lazyload" src="/assets/img/placeholder.png" data-src="/assets/img/anime-js-examples/Expanding-Grid-Item-Animation.png" alt="Demo image: Expanding Grid Item Animation" title="Expanding Grid Item Animation">
+    <img class="lazyload" data-src="/assets/img/anime-js-examples/Expanding-Grid-Item-Animation.gif" alt="Expanding Grid Item Animation - GIF Demo" title="Expanding Grid Item Animation">
+    <div class="img-extra"></div>
+  </figure>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Mary Lou</li>
+        <li><time>November 8, 2017</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://tympanus.net/codrops/2017/11/08/expanding-grid-item-animation/" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS / JavaScript</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About the code</h4>
+  <h3>Expanding Grid Item Animation</h3>
+  <p>A grid item animation where the thumbnail scales up when the details view is opened. Used <strong>anime.js</strong>.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Dependencies: </span>imagesloaded.js</p>
+</article>
+
+<div class="container">
+  <div class="ads">
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- adaptive-2 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2687268505112777"
+     data-ad-slot="6557570047"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  </div>
+</div>
+
+<article class="wrapper-2017">
+  <figure>
+    <img class="lazyload" src="/assets/img/placeholder.png" data-src="/assets/img/anime-js-examples/anime-js-Bike-to-School.png" alt="Demo image: Bike to School" title="Bike to School">
+    <img class="lazyload" data-src="/assets/img/anime-js-examples/anime-js-Bike-to-School.gif" alt="Bike to School - GIF Demo" title="Bike to School">
+    <div class="img-extra"></div>
+  </figure>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Mariusz Dabrowski</li>
+        <li><time>September 3, 2017</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/MarioD/pen/EvMNqE" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS / JavaScript (Babel)</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About the code</h4>
+  <h3>Bike to School</h3>
+  <p>An experiment with bodymovin.js and anime.js.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Dependencies: </span>bodymovin.js</p>
+</article>
+
+<article class="wrapper-2017">
+  <figure>
+    <img class="lazyload" src="/assets/img/placeholder.png" data-src="/assets/img/anime-js-examples/Modern-retro-IBM-THINK.png" alt="Demo image: Modern Retro - IBM THINK" title="Modern Retro - IBM THINK">
+    <img class="lazyload" data-src="/assets/img/anime-js-examples/Modern-retro-IBM-THINK.gif" alt="Modern Retro - IBM THINK - GIF Demo" title="Modern Retro - IBM THINK">
+    <div class="img-extra"></div>
+  </figure>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Mikael Ainalem</li>
+        <li><time>June 17, 2017</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/ainalem/pen/WORzLN" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS / JavaScript</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About the code</h4>
+  <h3>Modern Retro - IBM THINK</h3>
+  <p>IBM invites you to think. A modern retro poster for the IBM think campaign. Combines SVG dash technique with animations with <strong>anime.js</strong> to animate circles to the logo. Uses SVG blend modes to recreate the blending of colors in the logo.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Dependencies: </span>-</p>
+</article>
+
+<article class="wrapper-2017">
+  <video src="/assets/img/anime-js-examples/submit-button-anime-js.mp4" preload="metadata" loop></video>
+    <div class="img-extra"></div>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Andrew Millen</li>
+        <li><time>June 10, 2017</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/andrewmillen/pen/MoKLob" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS (SCSS) / JS</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About a code</h4>
+  <h3>Submit Button</h3>
+  <p>Submit button with anime.js.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Responsive: </span>no</p>
+  <p><span class="accent">Dependencies: </span>jquery.js, anime.js</p>
+</article>
+
+<article class="wrapper-2017">
+  <figure>
+    <img class="lazyload" src="/assets/img/placeholder.png" data-src="/assets/img/anime-js-examples/Anime-JS-Grid-Loading-Animations.jpg" alt="Demo image: Grid Loading Animations" title="Grid Loading Animations">
+  </figure>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Mary Lou</li>
+        <li><time>April 11, 2017</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://tympanus.net/codrops/2017/04/11/inspiration-for-grid-loading-animations/" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS / JavaScript</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About the code</h4>
+  <h3>Grid Loading Animations</h3>
+  <p>A set of grid loading animations for your inspiration. The idea is to show grid items with an interesting effect once they are loaded. Used <strong>anime.js</strong>.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Dependencies: </span>masonry.js</p>
+</article>
+
+<article class="wrapper-2017">
+  <figure>
+    <img class="lazyload" src="/assets/img/placeholder.png" data-src="/assets/img/anime-js-examples/animation-with-anime-js.png" alt="Demo image: Animation with Anime.js" title="Animation with Anime.js">
+    <img class="lazyload" data-src="/assets/img/anime-js-examples/animation-with-anime-js.gif" alt="Animation with Anime.js - GIF Demo" title="Animation with Anime.js">
+    <div class="img-extra"></div>
+  </figure>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Sasha</li>
+        <li><time>March 11, 2017</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/sashatran/pen/evWmoQ" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS (SCSS) / JavaScript</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About the code</h4>
+  <h3>Animation with Anime.js</h3>
+  <p>Simple and clear animation for menu with <strong>anime.js</strong>.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Dependencies: </span>font-awesome.css, jquery.js</p>
+</article>
+
+<article class="wrapper-2017">
+  <figure>
+    <img class="lazyload" src="/assets/img/placeholder.png" data-src="/assets/img/anime-js-examples/Preloader-with-Anime-js.png" alt="Demo image: Preloader with Anime.js" title="Preloader with Anime.js">
+    <img class="lazyload" data-src="/assets/img/anime-js-examples/Preloader-with-Anime-js.gif" alt="Preloader with Anime.js - GIF Demo" title="Preloader with Anime.js">
+    <div class="img-extra"></div>
+  </figure>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Kevin Konrad Henriquez</li>
+        <li><time>February 25, 2017</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/kkhenriquez/pen/dvPgbG" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML (Haml) / CSS (SCSS) / JavaScript</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About the code</h4>
+  <h3>Preloader with Anime.js</h3>
+  <p><blockquote>Decided to give <strong>animate.js</strong> a go and had a lot of fun with it.</blockquote></p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Dependencies: </span>-</p>
+</article>
+
+<article class="wrapper-2017">
+  <video src="/assets/img/anime-js-examples/anime-js-fireworks-canvas.mp4" preload="metadata" loop></video>
+    <div class="img-extra"></div>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Julian Garnier</li>
+        <li><time>February 23, 2017</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/juliangarnier/pen/gmOwJX" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / JS</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About a code</h4>
+  <h3>Anime.js Fireworks</h3>
+  <p></p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Responsive: </span>yes</p>
+  <p><span class="accent">Dependencies: </span>anime.js</p>
+</article>
+
+<article class="wrapper-2017">
+  <figure>
+    <img class="lazyload" src="/assets/img/placeholder.png" data-src="/assets/img/anime-js-examples/Anime-js-Color-Changing.png" alt="Demo image: Color Changing" title="Color Changing">
+    <img class="lazyload" data-src="/assets/img/anime-js-examples/Anime-js-Color-Changing.gif" alt="Color Changing - GIF Demo" title="Color Changing">
+    <div class="img-extra"></div>
+  </figure>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Alex Zaworski </li>
+        <li><time>August 26, 2016</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/alexzaworski/pen/mEkvAG" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS (SCSS) / JavaScript</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About the code</h4>
+  <h3>Color Changing</h3>
+  <p>Click anywhere.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Dependencies: </span>-</p>
+</article>
+
+<article class="wrapper-2017">
+  <figure>
+    <img class="lazyload" src="/assets/img/placeholder.png" data-src="/assets/img/anime-js-examples/Floatting-Draggable-Menu.png" alt="Demo image: Floatting Draggable Menu" title="Floatting Draggable Menu">
+    <img class="lazyload" data-src="/assets/img/anime-js-examples/Floatting-Draggable-Menu.gif" alt="Floatting Draggable Menu - GIF Demo" title="Floatting Draggable Menu">
+    <div class="img-extra"></div>
+  </figure>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Andy Pagès</li>
+        <li><time>August 17, 2016</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/andyNroses/pen/AXwPkb" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS (SCSS) / JavaScript</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About the code</h4>
+  <h3>Floatting Draggable Menu</h3>
+  <p>Floatting Draggable Menu (Messenger like).</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Dependencies: </span>foundation-icons.css</p>
+</article>
+
+<article class="wrapper-2017">
+  <figure>
+    <img class="lazyload" src="/assets/img/placeholder.png" data-src="/assets/img/anime-js-examples/anime-js-logo-animation.png" alt="Demo image: Logo Animation" title="Logo Animation">
+    <img class="lazyload" data-src="/assets/img/anime-js-examples/anime-js-logo-animation.gif" alt="Logo Animation - GIF Demo" title="Logo Animation">
+    <div class="img-extra"></div>
+  </figure>
+  <div class="info-box">
+    <div class="info info-author">
+      <h4>Author</h4>
+      <ul>
+        <li>Julian Garnier</li>
+        <li><time>June 26, 2016</time></li>
+      </ul>
+    </div>
+  <div class="info info-link">
+    <h4>Links</h4>
+    <ul>
+      <li><a href="https://codepen.io/juliangarnier/pen/xOgyjB" target="_blank">demo and code</a></li>
+    </ul>
+  </div>
+  <div class="info info-frontend">
+    <h4>Made with</h4>
+    <ul>
+      <li>HTML / CSS / JavaScript</li>
+    </ul>
+    </div>
+  </div>
+  <h4 class="about-the-item">About the code</h4>
+  <h3>Logo Animation</h3>
+  <p>Logo animation for anime-js.com.</p>
+  <p><span class="accent">Compatible browsers: </span>Chrome, Edge, Firefox, Opera, Safari</p>
+  <p><span class="accent">Dependencies: </span>-</p>
+</article>
+        </article>
+      </div>
+      <div class="container">
+        <div class="ads" style="max-width:100%;">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    <ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2687268505112777"
+    data-ad-slot="4941236040"
+    data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </div>
+    </div>
+    </div>
+  </div>
+</main>
+<footer role="contentinfo">
+    <div class="row">
+        <div class="row-content buffer clear-after">
+            <section id="top-footer">
+                <div class="widget column three">
+                    <h4>HTML + CSS</h4>
+                    <ul class="plain">
+                        <li><a href="/html-code-examples/">HTML Examples</a></li>
+                        <li><a href="/css-code-examples/">CSS Examples</a></li>
+                        <li><a href="/bootstrap-code-examples/">Bootstrap Examples</a></li>
+                        <li><a href="/html-css-speed-code/">Speed Code</a></li>
+                    </ul>
+                </div>
+                <div class="widget column three">
+                    <h4>JavaScript</h4>
+                    <ul class="plain">
+                        <li><a href="/javascript-code-examples">JavaScript Examples</a></li>
+                        <li><a href="/jquery-code-examples/">jQuery Examples</a></li>
+                        <li><a href="/react-code-examples/">React Examples</a></li>
+                        <li><a href="/vue-code-examples/">Vue Examples</a></li>
+                    </ul>
+                </div>								
+                <div class="widget column three">
+                    <h4>Other</h4>
+                    <ul class="plain">
+                        <li><a href="/free-web-books/">Free Books</a></li>
+                    </ul>
+                </div>				
+                <div class="widget meta-social column three">
+                    <h4>Follow Us</h4>
+                    <ul class="inline">
+                        <li class="s-youtube"><a href="https://www.youtube.com/channel/UCGr_1whd05px8Jiksu_XVzQ" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        <li class="s-twitter"><a href="https://twitter.com/FreeFrontend" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li class="s-facebook"><a href="https://www.facebook.com/freefrontend/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li class="s-pinterest"><a href="https://www.pinterest.com/freefrontend/freefrontend/" target="_blank"><i class="fab fa-pinterest"></i></a></li>
+                        <li class="s-tumblr"><a href="https://www.tumblr.com/blog/freefrontend-blog" target="_blank"><i class="fab fa-tumblr"></i></a></li>
+                        <li class="s-linkedin"><a href="https://www.linkedin.com/groups/13807698/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="s-ello"><a href="https://ello.co/freefrontend" target="_blank"><i class="fab fa-ello"></i></a></li>
+                        <li class="s-reddit"><a href="https://www.reddit.com/r/freecodestuff/" target="_blank"><i class="fab fa-reddit"></i></a></li>
+                        <li class="s-vk"><a href="https://vk.com/freefrontend" target="_blank"><i class="fab fa-vk"></i></a></li>
+                        <li class="s-rss"><a href="/index.xml" target="_blank"><i class="fa fa-rss"></i></a></li>
+                    </ul>
+                </div>														
+            </section>
+            <section id="bottom-footer">
+                <p class="keep-left">FreeFrontend &copy; 2016 - 2020</p>
+                <p class="keep-right"><a href="/privacy-policy">Privacy Policy and Cookies Policy</a></p>
+            </section>			
+        </div>	
+    </div>	
+</footer>
+<a href="#main" id="to-top" title="Go to top">back to top</a>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>		
+<script src="/js/plugins.js"></script>
+<script src="/js/beetle.js"></script>
+<script src="/js/jquery.custom.js"></script>	
+<script src="/js/prism.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/lazysizes.min.js"></script>	
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-63013215-5', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5386e46e10ed731d"></script>
+</body>
+</html>
